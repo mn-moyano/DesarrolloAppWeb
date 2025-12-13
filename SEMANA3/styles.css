@@ -1,22 +1,26 @@
-body{
-    background: linear-gradient(to bottom, #334ee5, #9faaec);
-    margin: 0;
-}
-
-
-body{
-    background: linear-gradient(135deg, #6c9fce, #fc9292);
-    margin: 0;
-}
-
-
-body{
-    background-color: #eef3f7;
+/* ===== Estilos generales ===== */
+body {
+    background-color: #d1e7fa;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.tabla-dinamica{
+/* ===== Títulos ===== */
+h1 {
+    text-align: center;
+}
+
+/* ===== Tablas generales ===== */
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #31A4C4;
+}
+
+/* ===== Tabla dinámica ===== */
+.tabla-dinamica {
     width: 100%;
     max-width: 800px;
     margin: 20px auto;
@@ -24,35 +28,41 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);
 }
-/*Estilo para el encabezado*/
-.tabla-dinamica th{
+
+/* Encabezado de la tabla */
+.tabla-dinamica th {
     background-color: rgb(32, 119, 97);
     color: white;
     padding: 12px 15px;
     text-align: center;
     font-weight: 600;
 }
-/*Estilo para las celdas*/
-.tabla-dinamica td{
+
+/* Celdas */
+.tabla-dinamica td {
     padding: 10px 15px;
     border-bottom: 1px solid #dddddd;
+    text-align: center;
 }
-/*Color alternado de filas*/
-.tabla-dinamica tbody tr:nth-child(even){
+
+/* Filas alternadas */
+.tabla-dinamica tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
-/*Efecto del mouse*/
-.tabla-dinamica tbody tr:hover{
-    background-color: #268355 !important;
-    color: white;
+
+/* Efecto hover */
+.tabla-dinamica tbody tr:hover {
+    background-color: #268355;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
-/*Estilo para la primera columna*/
-.tabla-dinamica td:first-child{
-    font-weight: 500;
+
+/* Texto visible al hacer hover */
+.tabla-dinamica tbody tr:hover td {
+    color: white;
 }
-/*Asegura que se vea el texto*/
-.tabla-dinamica tbody tr:hover td{
-    color:white;
+
+/* Primera columna */
+.tabla-dinamica td:first-child {
+    font-weight: 500;
 }

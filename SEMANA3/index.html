@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body >
-    <h1 style="background-color: rgb(182, 247, 247);">Bienvenidos</h1>
+    <header>
+        <h1><strong>Mi Sitio Web</strong></h1>
+    </header>
+    <main>
+    <h2 style="background-color: rgb(182, 247, 247);">Bienvenidos</h2>
     <h2 style="background-color: rgb(233, 173, 225); color: brown;">Semana 3</h2>
     <h3 style="background-color: darkkhaki;">Desarrollo Web</h3>
 
@@ -32,7 +36,38 @@
 </ul>
 <article>
     <h3>Formularios HTML</h3>
+    <form>
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="correo">Correo:</label><br>
+        <input type="email" id="correo" name="correo"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
     <h3>Tablas HTML</h3>
+    <table class="tabla-dinamica">
+        <thead>
+            <tr>
+                <th>Nro.</th>
+                <th>Nombres</th>
+                <th>Departamento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Jorge Loor</td>
+                <td>Sistemas</td>
+             </tr>
+            <tr>
+                <td>02</td>
+                <td>Madelyn Moyano</td>
+                <td>Ambiente</td>
+            </tr>
+        </tbody>
+        </table>
+        <br><br>
     
 </article>
 <hr>
@@ -42,7 +77,12 @@
 </section>
 <img width="200" src="img/imagen1.jpg" alt=""> <br>
 <video src="videos/video1.MP4" width="200" controls></video> <br>
-<a href="https://www.google.com" target="_black">Visita Google</a> <br>
+<a href="https://www.google.com" target="_blank">Visita Google</a> <br>
 <iframe width="500" height="315" src="https://www.youtube.com/embed/pidhWGD-m_A?si=mEQk_xOOajxIxbve" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</main>
+<footer>
+    <p>© 2025 - Desarrollado por Madelyn Moyano</p>
+    <p>Asignatura: Desarrollo de Aplicaciones Web</p>
+</footer>
 </body>
 </html>
