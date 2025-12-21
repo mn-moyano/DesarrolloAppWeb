@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi sitio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container text-center mt-4">
+        <h1>Bienvenido a mi Página Web</h1>
+        <p class="lead">Ejemplo de sitio web responsivo con Bootstrap</p>
+    </header>
+
+    <section class="container mt-4">
+        <h2 class="text-center">Sección Principal</h2>
+
+        <div class="row mt-3">
+
+            <div class="col-md-4 text-center">
+                <img src="assets/imagen1.jpg" class="img-fluid" alt="Imagen 1">
+                <h3>Columna 1</h3>
+                <p>Contenido descriptivo utilizando el sistema de grid de Bootstrap.</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img src="assets/imagen1.jpg" class="img-fluid" alt="Imagen 2">
+                <h3>Columna 2</h3>
+                <p>Diseño adaptable para escritorio, tablet y móvil.</p>
+            </div>
+            
+            <div class="col-md-4 text-center">
+                <img src="assets/imagen1.jpg" class="img-fluid" alt="Imagen 3">
+                <h3>Columna 3</h3>
+                <p>Aprendiendo Bootstrap.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container text-center mt-4">
+        <button class="btn btn-primaty" data-bs-toggle="collapse" data-bs-target="#info">
+            Ver más
+        </button>
+
+        <div id="info" class="collapse mt-3">
+            <p>Este texto se oculta y se muestra usando Bootstrap.</p>
+        </div>
+    </div>
+
+    <section class="container mt-5">
+        <h2>Formulario de contacto</h2>
+
+        <form>
+            <div class="mb-3">
+                <label>Nombre</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label>Correo</label>
+                <input type="email" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label>Comentarios</label>
+                <textarea class="form-control"></textarea>
+            </div>
+
+            <button class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="text-center bg-light mt-5 p-3">
+        <p>© 2025 Mi Sitio Web</p>
+        <a hred="#">Inicio</a> | <a href="#">Contacto</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
