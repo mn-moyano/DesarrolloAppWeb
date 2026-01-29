@@ -1,0 +1,154 @@
+body {
+    background-color: #d1e7fa;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #b6f7f7;
+    padding: 15px;
+    text-align: center;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+form input {
+    width: 100%;
+    padding: 6px;
+}
+.valido {
+    border: 2px solid green;
+    background-color: #eaffea;
+}
+
+/* INPUT INCORRECTO */
+.invalido {
+    border: 2px solid red;
+    background-color: #ffeaea;
+}
+
+/* ===== Títulos ===== */
+h1, h2 {
+    text-align: center;
+}
+
+/* ===== Tablas generales ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+thead {
+    background-color: #31A4C4;
+}
+
+#btn-alerta {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-alerta:hover {
+    background-color: darkorange;
+}
+
+span {
+    color: red;
+    font-size: 13px;
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carousel img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+/* ===== Tabla dinámica ===== */
+.tabla-dinamica {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);
+}
+
+/* Encabezado de la tabla */
+.tabla-dinamica th {
+    background-color: rgb(32, 119, 97);
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Celdas */
+.tabla-dinamica td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+
+/* Filas alternadas */
+.tabla-dinamica tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Efecto hover */
+.tabla-dinamica tbody tr:hover {
+    background-color: #268355;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Texto visible al hacer hover */
+.tabla-dinamica tbody tr:hover td {
+    color: white;
+}
+
+/* Primera columna */
+.tabla-dinamica td:first-child {
+    font-weight: 500;
+}
+/* Pantallas pequeñas (teléfonos) */
+@media (max-width: 600px) {
+ body {
+ background-color: lightblue;
+ font-size: 14px;
+ }
+}
+/* Pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+ body {
+ background-color: lightgreen;
+ font-size: 16px;
+ }
+}
+/* Pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+ body {
+ background-color: lightyellow;
+ font-size: 18px;
+ }
+}
