@@ -1,5 +1,6 @@
 # Importamos Flask y render_template
 from flask import Flask, render_template
+import os
 
 # Creamos la aplicación
 app = Flask(__name__)
@@ -31,4 +32,5 @@ def facturas():
 
 # Ejecutar aplicación
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
