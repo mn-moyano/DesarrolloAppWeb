@@ -1,13 +1,13 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Bienvenido al Sistema de Turnos - Clínica Dental D y A Odontología Especializada"
+    return render_template("home.html")
 
 @app.route('/cita/<paciente>')
 def cita(paciente):
-    return f"Bienvenido, {paciente}. Tu cita odontológica ha sido registrada correctamente."
+    return render_template("cita.html", paciente=paciente)
 
 if __name__ == "__main__":
     app.run(debug=True)
