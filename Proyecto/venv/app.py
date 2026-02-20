@@ -1,21 +1,34 @@
 # Importamos Flask y render_template
 from flask import Flask, render_template
 
-# Creamos la aplicación Flask
+# Creamos la aplicación
 app = Flask(__name__)
 
-# Ruta principal "/"
+# Ruta principal → ahora renderiza index.html
 @app.route("/")
-def home():
-    # Renderiza el archivo home.html
-    return render_template("home.html")
+def index():
+    return render_template("index.html")
 
-# Ruta dinámica que recibe el nombre del paciente
-@app.route('/cita/<paciente>')
-def cita(paciente):
-    # Renderiza cita.html y envía la variable paciente al HTML
-    return render_template("cita.html", paciente=paciente)
+# Página Acerca de
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
-# Ejecuta la aplicación en modo debug
+# Página de Pacientes
+@app.route("/pacientes")
+def pacientes():
+    return render_template("pacientes.html")
+
+# Página de Citas
+@app.route("/citas")
+def citas():
+    return render_template("citas.html")
+
+# Página de Facturación
+@app.route("/facturas")
+def facturas():
+    return render_template("facturas.html")
+
+# Ejecutar aplicación
 if __name__ == "__main__":
     app.run(debug=True)
